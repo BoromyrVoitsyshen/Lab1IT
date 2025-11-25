@@ -27,7 +27,7 @@ jobs:
         cache: 'maven'
 
     - name: Test with Maven
-      run: mvn -B test -Djava.awt.headless=true
+      run: mvn -B test "-Djava.awt.headless=true"
 
     - name: Upload Test Reports
       if: always() 
